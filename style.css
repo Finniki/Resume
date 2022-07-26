@@ -612,10 +612,10 @@ footer > .contact > ul > li {
     display: block;
     top: 8vh;
     background-color: #fff;
-    height: max-content;
+    height: fit-content;
     width: 30%;
     /* position: absolute; */
-    transform: translateX(300px);
+    transform: translateX(100%);
   }
   .nav__links {
     gap: 1.2rem;
@@ -736,11 +736,9 @@ footer > .contact > ul > li {
     display: block;
     top: 8vh;
     background-color: #fff;
-    height: max-content;
+    height: min-content;
     width: 30%;
-    /* position: absolute; */
-    /* position: absolute; */
-    transform: translateX(200px);
+    transform: translateX(100%);
   }
   .nav__links {
     gap: 1.2rem;
