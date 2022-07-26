@@ -153,6 +153,7 @@ footer {
   position: absolute;
   top: 0;
   transform: translateX(180%);
+  opacity: 0;
 }
 
 /********************/
