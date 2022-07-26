@@ -14,6 +14,7 @@ body {
   border-style: none;
   position: relative;
   overflow-x: hidden;
+  font-family: "Roboto Condensed", sans-serif;
 }
 .container {
   display: flex;
@@ -111,12 +112,12 @@ header {
   margin-bottom: 10%;
 }
 .nav {
-  height: 100%;
+  height: auto;
   width: 28%;
-  /* margin-top: 30vh; */
   position: fixed;
   top: 30vh;
   right: 0;
+  z-index: 3;
 }
 .section {
   width: 86%;
