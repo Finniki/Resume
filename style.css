@@ -613,9 +613,8 @@ footer > .contact > ul > li {
     display: block;
     top: 8vh;
     background-color: #fff;
-    height: fit-content;
-    width: 30%;
-    /* position: absolute; */
+    height: auto;
+    width: 32%;
     transform: translateX(100%);
   }
   .nav__links {
@@ -737,8 +736,8 @@ footer > .contact > ul > li {
     display: block;
     top: 8vh;
     background-color: #fff;
-    height: min-content;
-    width: 30%;
+    height: auto;
+    width: 32%;
     transform: translateX(100%);
   }
   .nav__links {

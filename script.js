@@ -119,13 +119,13 @@ pageLink.forEach(function (page) {
       e.preventDefault();
       home.style.opacity = 0;
       pages.forEach((page) => (page.style.transform = "translateX(-180%)"));
-      document.querySelector(id).style.transition = "transform 0.3s linear";
+      document.querySelector(id).style.transition = "transform 1s linear";
       document.querySelector(id).style.transform = "translateX(0)";
     }
     if (id === "#home") {
       e.preventDefault();
       pages.forEach((page) => (page.style.transform = "translateX(-180%)"));
-      document.querySelector(id).style.transition = "transform 0.3s linear";
+      document.querySelector(id).style.transition = "transform 1s linear";
 
       home.style.opacity = 1;
     }
