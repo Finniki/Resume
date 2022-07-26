@@ -124,6 +124,7 @@ pageLink.forEach(function (page) {
       pages.forEach((page) => (page.style.transform = "translateX(-180%)"));
       document.querySelector(id).style.transition = "transform 1s linear";
       document.querySelector(id).style.transform = "translateX(0)";
+      document.querySelector(id).style.opacity = 1;
     }
     if (id === "#home") {
       e.preventDefault();
