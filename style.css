@@ -14,6 +14,7 @@ body {
   border-style: none;
   position: relative;
   overflow-x: hidden;
+  overflow-y: hidden;
   font-family: "Roboto Condensed", sans-serif;
 }
 .container {
@@ -97,7 +98,7 @@ body {
 
 main {
   background-color: #ffe3e3;
-  min-height: 100vh;
+  height: 100vh;
   width: 65%;
   position: relative;
   /* color: #c92a2a; */
@@ -121,7 +122,7 @@ header {
 }
 .section {
   width: 86%;
-  min-height: 100vh;
+  height: 100%;
   margin: 0 0 20% 7%;
 }
 .section__about {
@@ -209,7 +210,7 @@ a:active {
   color: #39b385;
 }
 .icon:hover {
-  transform: scale(2);
+  transform: scale(1.05);
 }
 .icon-skill {
   transform: rotate(90deg);
@@ -223,6 +224,7 @@ a:active {
 }
 .header-image {
   height: auto;
+  max-width: 528px;
   width: 50%;
   margin: 48px -120px 0 0;
 }
@@ -320,17 +322,17 @@ h3 {
   min-width: 30%;
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 0.9rem;
   justify-content: center;
 }
 .section__skill--heading {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.4px;
   text-transform: uppercase;
-  font-size: 1rem;
   font-weight: 700;
 }
 .section__skill--text {
-  line-height: 24px;
+  line-height: 2.4rem;
 }
 .testimonial {
   width: 70%;

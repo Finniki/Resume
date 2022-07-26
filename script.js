@@ -99,7 +99,7 @@ btnMenu.addEventListener("click", function () {
   // navBar.scrollIntoView({ behavior: "smooth" });
 });
 
-btnCloseMenu.addEventListener("click", function () {
+const closeMenu = function () {
   btnMenu.style.display === "none"
     ? (btnMenu.style.display = "inline")
     : (btnMenu.style.display = "none");
@@ -108,13 +108,16 @@ btnCloseMenu.addEventListener("click", function () {
     : (btnCloseMenu.style.display = "inline");
   navBar.style.transform = "translateX(100%)";
   navBar.style.transition = "transform 0.3s linear";
-});
+};
+
+btnCloseMenu.addEventListener("click", closeMenu);
 const home = document.querySelector("header");
 pageLink.forEach(function (page) {
   page.addEventListener("click", function (e) {
     if (!this.closest(".nav__link")) return;
     const id = this.getAttribute("href");
     console.log(id);
+    // closeMenu();
     if (id !== "#home") {
       e.preventDefault();
       home.style.opacity = 0;
