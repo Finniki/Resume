@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/aa5bc2ed98.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+    <script
+      src="https://unpkg.com/swipe-listener@1.2.0/dist/swipe-listener.min.js"
+      type="text/javascript"
+    ></script>
+    <title>A test file</title>
+  </head>
+  <body id="body">
+    <div class="container">
+      <main id="main">
+        <div class="top_icons">
+          <div class="toggle">
+            <input type="checkbox" class="checkbox" id="checkbox" />
+            <label for="checkbox" class="label">
+              <i class="fa-solid fa-sun"></i>
+              <i class="fa-solid fa-moon"></i>
+              <div class="ball"></div>
+            </label>
+          </div>
+          <div class="menu">
+            <i class="fa-solid fa-bars menu_bar"></i>
+          </div>
+          <div class="close">
+            <i class="fa-solid fa-xmark close_menu"></i>
+          </div>
+        </div>
+        <header id="home" class="page1">
+          <div class="header">
+            <h1 class="header--intro">
+              Hi,<br />
+              I'm <span class="highlight">Rufina</span>
+              <span class="and">and</span> I'm<br />
+              a
+              <span class="highlight">web Developer</span>
+            </h1>
+            <img
+              class="header-image"
+              src="./images/background1.jpg"
+              alt="A photo of myself"
+            />
+          </div>
+          <p class="header--info">
+            I love designing and developing experiences<br />
+            that make people's lives simpler
+          </p>
+        </header>
+
+        <section class="section section__about page page2" id="about">
+          <h3 class="section__heading">About Me</h3>
+          <div class="section--heading"></div>
+          <p>
+            Hi, my name is Rufina. everyone calls me Finn. I am a software
+            designer and developer. I specialize in the development of web
+            applications for desktop and mobile devices with a focus on making
+            these programs human friendly, aesthetically pleasing, on-brand and
+            usable, with a touch of elegance and professional smoothness.
+          </p>
+          <p>
+            I cannot state my big career goal or where I see myself in five
+            years as the world is rapidly changing and I do not have the
+            professional experience to be certain about such things. However, I
+            know that I have a curious and objective approach with which I
+            tackle every project.
+          </p>
+          <p>
+            I am always open to challenges and constructive feedback. I am an
+            eager learner and pick new concepts quickly. I have collaborated
+            with a small team on some personal projects where I refined some of
+            my skills such as; innovation, communication, collaboration,
+            conflict resolution etc. I am drawn by the years of experience of
+            the professional team at CoralPay. I want to learn from the team and
+            dedicate all my skills and talents to developing high-quality and
+            unique products.
+          </p>
+          <p>
+            When I'm not programming, I spend a lot of time teaching HTML and
+            CSS to beginners and kids. For leisure, I enjoy basketball games and
+            quality time spent playing Grand Theft Auto.
+          </p>
+        </section>
+
+        <section class="section section__skills page page3" id="skills">
+          <h3 class="section__heading">Take a look at my skillset</h3>
+          <div class="section--heading"></div>
+          <div class="all__skills">
+            <div class="hard__skills">
+              <div class="section__skill html">
+                <div class="section__skill--info">
+                  <h4 class="section__skill--heading">
+                    Semantic HTML Programming
+                  </h4>
+                  <p class="section__skill--text">
+                    I write clean <strong><em>HTML5</em></strong> codes for web
+                    applications with the aim to improve
+                    <strong><em>accessibility</em></strong
+                    >, <strong><em>search engine optimization</em></strong> and
+                    <strong><em>human readability</em></strong
+                    >.
+                  </p>
+                </div>
+              </div>
+              <div class="section__skill css">
+                <div class="section__skill--info">
+                  <h4 class="section__skill--heading">Advanced css design</h4>
+
+                  <p class="section__skill--text">
+                    I create aesthetic and highly responsive webpages with the
+                    flexibility of design techniques such as advanced
+                    <strong>CSS</strong> and <strong>SASS</strong>.
+                  </p>
+                </div>
+              </div>
+              <div class="section__skill javascript">
+                <div class="section__skill--info">
+                  <h4 class="section__skill--heading">
+                    Optimal Javascript Functionality
+                  </h4>
+                  <p class="section__skill--text">
+                    I build advanced web applications to solve real-life
+                    problems with my knowledge of
+                    <strong>JavaScript</strong> and <strong>React</strong>.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="soft__skills">
+              <h4>Soft Skills</h4>
+              <ul>
+                <li class="softskill">2-way Communication</li>
+                <li class="softskill">Collaboration</li>
+                <li class="softskill">Creativity</li>
+                <li class="softskill">Critical thinking</li>
+                <li class="softskill">Adaptability</li>
+                <li class="softskill">Attention to detail</li>
+                <li class="softskill">Organization</li>
+                <li class="softskill">Work Ethic</li>
+                <li class="softskill">Speech</li>
+              </ul>
+            </div>
+          </div>
+          <div class="testimonial">
+            <img />
+            <div class="person">
+              <div class="person__review"></div>
+              <div class="person__info">
+                <div class="person__name">Paschal</div>
+                <div class="person__position">Founder, Papito Bistro</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section__works page page4" id="portfolio">
+          <h3 class="section__heading">
+            Here are some projects I've worked on
+          </h3>
+          <div class="section--heading"></div>
+
+          <div class="section__works--slider">
+            <div class="section__works--slide">
+              <div class="section-slide">
+                <div class="section__works--project">
+                  <img
+                    class="project-images img-mapty"
+                    src="./images/mapty.jpeg"
+                    alt="A photo of the project"
+                  />
+                  <div class="project-details mapty">
+                    <h4 class="project-title">Mapty Application</h4>
+                    <p class="project-info">
+                      Mapty helps you keep track of your outdoor activities by
+                      helping you plan workout courses in your general location.
+                      I built this application using geolocation APIs
+                    </p>
+                    <a target="_blank" href="https://finniki-mapty.netlify.app/"
+                      >See it here</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="section-slide">
+                <div class="section__works--project">
+                  <img
+                    class="project-images img-bankist"
+                    src="./images/bankist-site.jpeg"
+                    alt="A photo of the project"
+                  />
+                  <div class="project-details">
+                    <h4 class="project-title">Bankist Webpage</h4>
+                    <p class="project-info">
+                      Bankist is a webpage created for a modern minimalist bank.
+                      I built the site and added some interactivity with my
+                      knowledge of advanced DOM manipulation.
+                    </p>
+                    <a
+                      target="_blank"
+                      href="https://finniki-bankist.netlify.app/"
+                      >See it here</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="section-slide">
+                <div class="section__works--project">
+                  <img
+                    class="project-images img-pharm"
+                    src="./images/pharm.jpeg"
+                    alt="A photo of the project"
+                  />
+                  <div class="project-details">
+                    <h4 class="project-title">Your Online Pharmacy</h4>
+                    <p class="project-info">
+                      Your online pharmacy is a website designed and developed
+                      for the modern day pharmacy. I built this site with a
+                      major focus on CSS flex and grid box techniques and
+                      minimal Javascript.
+                    </p>
+                    <a
+                      target="_blank"
+                      href="https://finniki-pharmacy-page.netlify.app/"
+                      >See it here</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="section-slide">
+                <div class="section__works--project">
+                  <img
+                    class="project-images img-mapty"
+                    src="./images/bankist-app.jpeg"
+                    alt="A photo of the project"
+                  />
+                  <div class="project-details bankist-app">
+                    <h4 class="project-title">Bankist Application</h4>
+                    <p class="project-info">
+                      Bankist App is the internet banking application for a
+                      modern bank. I built this project using advanced array,
+                      object and string methods. Login information = {'ru':
+                      1111, 'gs': 2222, 'bbw': 3333, 'ok': 4444}.<!-- Transfers can
+                      only be done to other registered usernames. -->
+                    </p>
+                    <a
+                      target="_blank"
+                      href="https://finniki-bankist-app.netlify.app/"
+                      >See it here</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+            <button class="slider__btn slider__btn--left">&larr;</button>
+            <button class="slider__btn slider__btn--right">&rarr;</button>
+            <div class="dots"></div>
+          </div>
+
+          <a href="#">See more &rarr;</a>
+        </section>
+
+        <section class="section section__certificates page page5" id="cert">
+          <h3 class="section__heading">And here are my certificates</h3>
+          <div class="section--heading"></div>
+
+          <ul>
+            <li>
+              <a
+                class="grid-item"
+                target="_blank"
+                href="https://freecodecamp.org/certification/finniki/javascript-algorithms-and-data-structures"
+              >
+                <img
+                  class="image-cert cert-fcc-js"
+                  src="./images/fcc-js.jpeg"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                class="grid-item"
+                target="_blank"
+                href="https://freecodecamp.org/certification/Finniki/responsive-web-design"
+              >
+                <img
+                  class="image-cert cert-fcc-rwd"
+                  src="./images/fcc-rwd.jpeg"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                class="grid-item"
+                target="_blank"
+                href="https://www.sololearn.com/certificates/course/en/24577304/1024/landscape/png"
+              >
+                <img
+                  class="image-cert image-cert-border cert-solo-js"
+                  src="./images/sololearn_js.png"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                class="grid-item"
+                target="_blank"
+                href="https://www.sololearn.com/Certificate/1023-24577304/pdf/"
+              >
+                <img
+                  class="image-cert image-cert-border cert-solo-css"
+                  src="./images/sololearn_css.jpeg"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                class="grid-item"
+                class="grid-item"
+                target="_blank"
+                href="https://www.sololearn.com/Certificate/1014-24577304/pdf/"
+              >
+                <img
+                  class="image-cert image-cert-border cert-solo-html"
+                  src="./images/sololearn_html.jpeg"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                class="grid-item"
+                target="_blank"
+                href="https://aptlearn.io?cert_hash=aa7cd2b201f0b0f2"
+              >
+                <img
+                  class="image-cert image-cert-border cert-aptlearn"
+                  src="./images/aptlearn_cert.jpg"
+                />
+              </a>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <aside>
+        <nav class="nav">
+          <ul class="nav__links">
+            <li class="nav__link">
+              <h4 class="resume">RESUME</h4>
+            </li>
+            <li class="nav__link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-home"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                />
+              </svg>
+              <a href="#home">Home</a>
+            </li>
+            <li class="nav__link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-about"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                />
+              </svg>
+              <a href="#about">About</a>
+            </li>
+            <li class="nav__link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-skill"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+                />
+              </svg>
+              <a href="#skills">Skills</a>
+            </li>
+            <li class="nav__link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-works"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
+              <a href="#portfolio">My Works</a>
+            </li>
+            <li class="nav__link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-certs"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                />
+              </svg>
+              <a href="#cert">My Certificates</a>
+            </li>
+            <li class="nav__link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-contact"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 3l-6 6m0 0V4m0 5h5M5 3a2 2 0 00-2 2v1c0 8.284 6.716 15 15 15h1a2 2 0 002-2v-3.28a1 1 0 00-.684-.948l-4.493-1.498a1 1 0 00-1.21.502l-1.13 2.257a11.042 11.042 0 01-5.516-5.517l2.257-1.128a1 1 0 00.502-1.21L9.228 3.683A1 1 0 008.279 3H5z"
+                />
+              </svg>
+              <a href="#contact">Contact Me!</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+
+    <div class="footer"></div>
+    <footer>
+      <div class="contact" id="contact">
+        <ul>
+          <li>
+            <a target="_blank" href="tel:08147518022" id="phone">
+              <i class="fa fa-phone icon"></i>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="mailto:mailtorufina@gmail.com" id="email">
+              <i class="fa-solid fa-at icon"></i
+            ></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://wa.link/n0f6qd" id="whatsapp">
+              <i class="fa-brands fa-whatsapp icon"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="www.linkedin.com/in/rufina-uche-2b0112144"
+              id="linkedin"
+              ><i class="fa-brands fa-linkedin-in icon"></i
+            ></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/Finniki" id="github">
+              <i class="fa-brands fa-github icon"></i>
+            </a>
+          </li>
+          <!-- <li>
+            <a
+              target="_blank"
+              href="https://twitter.com/R_for_Royalty"
+              id="twitter"
+              ><i class="fa-brands fa-twitter icon"></i
+            ></a>
+          </li> -->
+        </ul>
+      </div>
+    </footer>
+    <!-- <section class="full-portfolio"></section> -->
+  </body>
+</html>
